@@ -7,7 +7,6 @@ COPY startup.sh /opt/
 COPY sshd_config /etc/ssh/
 COPY hostingstart.html /home/site/wwwroot/hostingstart.html
 COPY staticsite.rb /opt/staticsite.rb
-COPY index.rb /home/site/wwwroot/index.rb
 
 RUN apt-get update -qq \
     && apt-get install -y nodejs openssh-server vim curl wget tcptraceroute --no-install-recommends \

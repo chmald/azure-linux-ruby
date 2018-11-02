@@ -6,7 +6,7 @@ options = {
 }
 server = WEBrick::HTTPServer.new(options)
 server.mount_proc '/' do |req, res|
-    res.body = 'Hello from RUBY!'
+    res.body = 'Hello from RUBY!!'
 end
 
 trap 'INT' do server.shutdown end
